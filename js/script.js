@@ -155,7 +155,7 @@ function sendWhatsApp() {
     
     // WhatsApp message without subject
     const waMessage = `Hi, I'm ${name}.\n\nMessage:\n${message}`;
-    const waLink = `https://wa.me/6281234567890?text=${encodeURIComponent(waMessage)}`;
+    const waLink = `https://wa.me/6289650872288?text=${encodeURIComponent(waMessage)}`;
     window.open(waLink, '_blank');
 }
 
