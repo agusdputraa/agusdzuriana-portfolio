@@ -51,8 +51,11 @@ Berisi file JavaScript dengan beberapa fitur:
 - **GitHub**: [@agusdputraa](https://github.com/agusdputraa)
 - **Instagram**: [@agusdputraa](https://instagram.com/agusdputraa)
 
----
 
+## Live Preview
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://agusdzuriana.vercel.app/)
+
+---
 ## Portfolio Reference
 
 ![Portfolio Reference](reference.png)
