@@ -1,0 +1,77 @@
+<!-- About Me Section -->
+<section id="about" class="py-16 md:py-20 bg-[#111827]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Title with underline -->
+        <div class="text-center mb-10 md:mb-16 fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">About Me</h2>
+            <div class="w-16 h-1 bg-cyan-400 mx-auto"></div>
+        </div>
+        
+        <!-- Main Content: Stats + Description -->
+        <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center md:items-stretch">
+            <!-- Left - Big Stats -->
+            <div class="w-full md:w-1/4 flex items-center justify-center md:justify-start md:flex-col md:text-left gap-4 md:gap-0 fade-in-left">
+                <div class="text-6xl sm:text-7xl md:text-9xl lg:text-[10rem] font-bold md:mb-4">1+</div>
+                <div class="text-base md:text-xl lg:text-2xl leading-relaxed text-left md:text-left">
+                    <p>Year</p>
+                    <p>Project</p>
+                    <p>Experience</p>
+                </div>
+            </div>
+            
+            <!-- Right - Description + Skill Cards -->
+            <div class="w-full md:w-3/4 space-y-6 md:space-y-8">
+                <div class="fade-in" data-delay="100">
+                    <p class="leading-relaxed text-sm md:text-base text-center md:text-left">
+                        I Am Agus Dzuriana, I Am A Full Stack Web Developer, And I Am Very Passionate And Dedicated To My Work. 
+                        With 1+ Year Project Experience, I Have Acquired The Skills And Knowledge 
+                        Necessary To Make Your Project A Success.
+                    </p>
+                </div>
+
+                <!-- Skill Cards - Snap scroll on mobile -->
+                <div class="skill-carousel flex gap-4 pt-4 overflow-x-auto scroll-container pb-2 snap-x snap-mandatory sm:grid sm:grid-cols-3 sm:overflow-visible sm:snap-none fade-in" data-delay="200">
+                    <!-- Card 1 - Frontend -->
+                    <div class="skill-card border border-white/20 rounded-2xl p-4 text-center hover:border-white/40 transition w-[calc(100vw-3rem)] flex-shrink-0 snap-center sm:w-auto sm:flex-shrink sm:snap-align-none">
+                        <div class="w-10 h-10 border border-white/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <i data-feather="monitor" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-sm mb-2">Frontend</h3>
+                        <p class="text-xs text-gray-400 mb-3">Building responsive and interactive user interfaces.</p>
+                        <div class="flex justify-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-5 h-5" alt="HTML" title="HTML">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-5 h-5" alt="CSS" title="CSS">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5" alt="JavaScript" title="JavaScript">
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Database -->
+                    <div class="skill-card border border-white/20 rounded-2xl p-4 text-center hover:border-white/40 transition w-[calc(100vw-3rem)] flex-shrink-0 snap-center sm:w-auto sm:flex-shrink sm:snap-align-none">
+                        <div class="w-10 h-10 border border-white/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <i data-feather="database" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-sm mb-2">Database</h3>
+                        <p class="text-xs text-gray-400 mb-3">Managing and designing efficient database systems.</p>
+                        <div class="flex justify-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-5 h-5" alt="MySQL" title="MySQL">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" class="w-5 h-5" alt="Supabase" title="Supabase">
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Backend -->
+                    <div class="skill-card border border-white/20 rounded-2xl p-4 text-center hover:border-white/40 transition w-[calc(100vw-3rem)] flex-shrink-0 snap-center sm:w-auto sm:flex-shrink sm:snap-align-none">
+                        <div class="w-10 h-10 border border-white/20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                            <i data-feather="server" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-sm mb-2">Backend</h3>
+                        <p class="text-xs text-gray-400 mb-3">Building server-side logic and APIs.</p>
+                        <div class="flex justify-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-5 h-5" alt="JavaScript" title="JavaScript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" class="w-5 h-5" alt="PHP" title="PHP">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,87 @@
+<!-- Contact Section -->
+<section id="contact" class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-4 fade-in">Contact Me</h2>
+        <p class="text-center text-sm md:text-base max-w-2xl mx-auto mb-10 md:mb-16 text-gray-300 fade-in" data-delay="100">
+            Have a project in mind? Let's work together to bring your ideas to life.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            <!-- Contact Info -->
+            <div class="space-y-6 md:space-y-8">
+                <div class="fade-in" data-delay="150">
+                    <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6">Get In Touch</h3>
+                    <p class="text-sm md:text-base mb-6 md:mb-8 text-gray-300">
+                        Feel free to reach out for collaborations, opportunities, or just a friendly chat about web development.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 fade-in-left" data-delay="200">
+                        <div class="w-10 h-10 md:w-12 md:h-12 border border-white/20 rounded-lg flex items-center justify-center shrink-0">
+                            <i data-feather="mail" class="w-5 h-5 md:w-6 md:h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs md:text-sm text-gray-400">Email</p>
+                            <p class="font-medium text-sm md:text-base">agusdzuriana@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 fade-in-left" data-delay="250">
+                        <div class="w-10 h-10 md:w-12 md:h-12 border border-white/20 rounded-lg flex items-center justify-center shrink-0">
+                            <i data-feather="map-pin" class="w-5 h-5 md:w-6 md:h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs md:text-sm text-gray-400">Location</p>
+                            <p class="font-medium text-sm md:text-base">Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 fade-in-left" data-delay="300">
+                        <div class="w-10 h-10 md:w-12 md:h-12 border border-white/20 rounded-lg flex items-center justify-center shrink-0">
+                            <i data-feather="briefcase" class="w-5 h-5 md:w-6 md:h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs md:text-sm text-gray-400">Status</p>
+                            <p class="font-medium text-sm md:text-base">Available for freelance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="border border-white/20 rounded-2xl p-5 md:p-8 fade-in-right" data-delay="350">
+                <form class="space-y-4 md:space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs md:text-sm mb-2">Name</label>
+                            <input type="text" class="w-full px-3 md:px-4 py-2.5 md:py-3 bg-transparent border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 text-sm md:text-base" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label class="block text-xs md:text-sm mb-2">Email</label>
+                            <input type="email" class="w-full px-3 md:px-4 py-2.5 md:py-3 bg-transparent border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 text-sm md:text-base" placeholder="Your email">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs md:text-sm mb-2">Subject</label>
+                        <input type="text" class="w-full px-3 md:px-4 py-2.5 md:py-3 bg-transparent border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 text-sm md:text-base" placeholder="Subject">
+                    </div>
+                    <div>
+                        <label class="block text-xs md:text-sm mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-3 md:px-4 py-2.5 md:py-3 bg-transparent border border-white/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400/50 focus:border-cyan-400 resize-none text-sm md:text-base" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <button type="button" onclick="sendEmail()" class="py-2.5 md:py-3 rounded-lg font-semibold text-sm md:text-base text-white transition hover:opacity-90 inline-flex items-center justify-center gap-2" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">
+                            <i data-feather="mail" class="w-4 h-4"></i>
+                            Send Email
+                        </button>
+                        <button type="button" onclick="sendWhatsApp()" class="py-2.5 md:py-3 rounded-lg font-semibold text-sm md:text-base transition inline-flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white">
+                            <i data-feather="message-circle" class="w-4 h-4"></i>
+                            Send WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

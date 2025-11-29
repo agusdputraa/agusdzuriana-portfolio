@@ -1,64 +1,58 @@
-# Personal Portfolio - Agus Dzuriana
+# Agus Dzuriana - Portfolio Website
 
-Proyek ini merupakan website portfolio sederhana yang menampilkan informasi pribadi, pengalaman kerja, proyek, dan kontak. Website dibangun menggunakan HTML5 dan Tailwind CSS untuk tampilan yang modern dan responsif.
+Website portfolio personal yang menampilkan profil, pengalaman, dan project-project yang telah saya kerjakan.
 
-## Fitur Utama
+## Tentang Project Ini
 
-- Navbar fixed di bagian atas
-- Identitas singkat (nama + role)
-- Navigasi ke beberapa section:
-  - Home
-  - About Me
-  - Experience
-  - Projects
-  - Contact
-- Tombol Hire Me
-- Struktur halaman yang siap dikembangkan:
-  - Personal Info
-  - About
-  - Experience
-  - Project Showcase
-  - Footer
+Portfolio ini dibuat sebagai final project dari **Fundamental Web Mini Bootcamp** di **Hacktiv8**. Website ini dibangun menggunakan:
 
-## Teknologi yang Digunakan
+- **HTML** - Struktur halaman web
+- **Tailwind CSS** - Styling dan responsive design
+- **JavaScript** - Interaktivitas dan animasi
 
-- HTML5
-- Tailwind CSS CDN
-- Struktur UI responsif dan clean
+## Fitur
+
+- **Responsive Design** - Tampilan optimal di semua ukuran layar (desktop, tablet, mobile)
+- **Scroll Animations** - Animasi fade-in saat scroll untuk pengalaman visual yang menarik
+- **Mobile Menu** - Hamburger menu untuk navigasi di perangkat mobile
+- **Contact Form** - Integrasi dengan Email dan WhatsApp
+- **Project Showcase** - Menampilkan project dengan filter kategori
 
 ## Struktur File
 
-```
-portfolio/
-├── index.html
-├── Header (Navbar)
-├── Section: Personal Info
-├── Section: About
-├── Section: Experience
-├── Section: Projects
-└── Footer
-```
+### index.html
+File utama yang menjadi entry point website. File ini menggunakan sistem **HTML Include** untuk memuat section-section secara terpisah menggunakan atribut `data-include`.
 
-## Cara Menggunakan
+### Folder `sections/`
+Berisi file-file HTML yang dipisah per section untuk kemudahan maintenance:
+- **nav.html** - Navigasi bar dengan logo, menu, dan tombol Hire Me
+- **hero.html** - Section pembuka dengan nama, deskripsi, social links, dan CTA buttons
+- **about.html** - Section tentang saya, statistik pengalaman, dan skill cards
+- **experience.html** - Timeline pengalaman bootcamp
+- **projects.html** - Showcase project dengan filter kategori
+- **contact.html** - Form kontak dengan integrasi Email dan WhatsApp
+- **footer.html** - Footer dengan logo, deskripsi, social links, dan navigasi
 
-### Clone repository:
-```bash
-git clone https://github.com/username/portfolio
-```
+### Folder `js/`
+Berisi file JavaScript dengan beberapa fitur:
 
-### Buka file index.html di browser:
-```bash
-open index.html
-```
-
-### Edit section sesuai kebutuhan (About, Experience, Projects, dll).
-
-## Catatan
-
-- Tailwind CSS menggunakan CDN agar cepat dan mudah tanpa setup build.
-- Section masih kosong dan siap diisi.
-- Kamu dapat menambahkan interaksi dengan JavaScript jika diperlukan.
+**script.js** mencakup:
+- **HTML Include System** - Memuat file HTML terpisah ke dalam `index.html`
+- **Scroll Animations** - Mengaktifkan animasi fade-in saat elemen masuk viewport
+- **Scroll Spy** - Mengupdate URL hash dan highlight menu sesuai section yang sedang dilihat
+- **Mobile Menu Toggle** - Membuka/menutup hamburger menu di mobile
+- **Project Filter** - Memfilter project berdasarkan kategori (All, Frontend, Database)
+- **Contact Form Functions** - Mengirim pesan via Email atau WhatsApp
 
 ## Kontak
 
-Jika ingin berdiskusi atau membutuhkan bantuan lebih lanjut, silakan hubungi melalui bagian Contact di website ini.
+- **Email**: agusdzuriana@gmail.com
+- **LinkedIn**: [Agus Dzuriana Poetra](https://linkedin.com/in/agus-dzuriana-poetra-604ab8102/)
+- **GitHub**: [@agusdputraa](https://github.com/agusdputraa)
+- **Instagram**: [@agusdputraa](https://instagram.com/agusdputraa)
+
+---
+
+## Portfolio Reference
+
+![Portfolio Reference](reference.png)

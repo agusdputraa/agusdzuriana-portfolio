@@ -1,0 +1,52 @@
+<!-- Navigation -->
+<nav class="fixed w-full top-0 z-50 bg-[#0a0e27] md:bg-[#0a0e27]/80 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2">
+            <img src="https://res.cloudinary.com/dg6cr7w81/image/upload/v1764416137/agus-logo_dwrp7k.svg" alt="Logo" class="w-8 h-8 md:w-10 md:h-10 rounded-lg">
+            <div class="text-xs text-slate-400 hidden md:block">
+                <p class="font-semibold text-white">Agus Dzuriana Poetra</p>
+                <p>Full Stack Web Developer</p>
+            </div>
+        </a>
+        
+        <!-- Mobile Name (Center) -->
+        <div class="text-center md:hidden">
+            <p class="font-semibold text-white text-sm">Agus Dzuriana</p>
+            <p class="text-xs text-slate-400">Full Stack Web Developer</p>
+        </div>
+        
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6 lg:space-x-8 text-sm">
+            <a href="index.html#home" class="hover:text-cyan-400 transition">Home</a>
+            <a href="index.html#about" class="hover:text-cyan-400 transition">About me</a>
+            <a href="index.html#experience" class="hover:text-cyan-400 transition">Experience</a>
+            <a href="index.html#projects" class="hover:text-cyan-400 transition">Projects</a>
+            <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+        </div>
+        
+        <!-- Desktop Hire Me Button -->
+        <a href="mailto:agusdzuriana@gmail.com?subject=Job%20Opportunity%20-%20Let's%20Work%20Together&body=Hi%20Agus,%0A%0AI%20came%20across%20your%20portfolio%20and%20I'm%20impressed%20with%20your%20work.%20I%20would%20like%20to%20discuss%20a%20potential%20collaboration%20or%20job%20opportunity%20with%20you.%0A%0APlease%20let%20me%20know%20your%20availability%20for%20a%20discussion.%0A%0ABest%20regards," class="hidden md:block px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition text-sm" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">
+            Hire Me
+        </a>
+        
+        <!-- Mobile Hamburger Button -->
+        <button onclick="toggleMobileMenu()" class="md:hidden w-10 h-10 flex items-center justify-center">
+            <i data-feather="menu" class="w-6 h-6" id="menu-icon"></i>
+        </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0a0e27] border-t border-white/10">
+        <div class="px-4 py-4 space-y-3">
+            <a href="index.html#home" onclick="closeMobileMenu()" class="block py-2 text-sm hover:text-cyan-400 transition">Home</a>
+            <a href="index.html#about" onclick="closeMobileMenu()" class="block py-2 text-sm hover:text-cyan-400 transition">About me</a>
+            <a href="index.html#experience" onclick="closeMobileMenu()" class="block py-2 text-sm hover:text-cyan-400 transition">Experience</a>
+            <a href="index.html#projects" onclick="closeMobileMenu()" class="block py-2 text-sm hover:text-cyan-400 transition">Projects</a>
+            <a href="index.html#contact" onclick="closeMobileMenu()" class="block py-2 text-sm hover:text-cyan-400 transition">Contact</a>
+            <a href="mailto:agusdzuriana@gmail.com?subject=Job%20Opportunity%20-%20Let's%20Work%20Together&body=Hi%20Agus,%0A%0AI%20came%20across%20your%20portfolio%20and%20I'm%20impressed%20with%20your%20work.%20I%20would%20like%20to%20discuss%20a%20potential%20collaboration%20or%20job%20opportunity%20with%20you.%0A%0APlease%20let%20me%20know%20your%20availability%20for%20a%20discussion.%0A%0ABest%20regards," onclick="closeMobileMenu()" class="block py-3 mt-2 text-center rounded-lg font-semibold text-sm" style="background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);">
+                Hire Me
+            </a>
+        </div>
+    </div>
+</nav>

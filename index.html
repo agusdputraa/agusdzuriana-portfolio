@@ -1,47 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth" style="background-color: #0a0e27;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agus Dzuriana - Full Stack Web Developer</title>
+    <link rel="icon" type="image/svg+xml" href="https://res.cloudinary.com/dg6cr7w81/image/upload/v1764416137/agus-logo_dwrp7k.svg">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        html, body {
+            overscroll-behavior: none;
+        }
+        .scroll-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .scale-in.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <nav class="fixed w-full top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="text-2xl font-bold">
-                    <span class="text-purple-500">A</span><span class="text-cyan-400">D</span>
-                </div>
-                <div class="text-xs text-slate-400">
-                    <p class="font-semibold">Agus Dzuriana</p>
-                    <p>Full Stack Web Developer</p>
-                </div>
-            </div>
-            <div class="hidden md:flex space-x-8 text-sm">
-                <a href="#" class="hover:text-cyan-400 transition">Home</a>
-                <a href="#" class="hover:text-cyan-400 transition">About me</a>
-                <a href="#" class="hover:text-cyan-400 transition">Experience</a>
-                <a href="#" class="hover:text-cyan-400 transition">Projects</a>
-                <a href="#" class="hover:text-cyan-400 transition">Contact</a>
-            </div>
-            <button class="gradient-button bg-blue-500 px-6 py-2 rounded-lg font-semibold hover:opacity-90 transition text-sm">
-                Hire Me
-            </button>
-        </div>
-    </nav>
+<body class="text-white font-sans overflow-x-hidden bg-[#0a0e27]" style="background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%); background-attachment: fixed;">
+    
+    <!-- Include Navigation -->
+    <div data-include="sections/nav.html"></div>
+    
+    <!-- Include Hero -->
+    <div data-include="sections/hero.html"></div>
+    
+    <!-- Include About -->
+    <div data-include="sections/about.html"></div>
+    
+    <!-- Include Experience -->
+    <div data-include="sections/experience.html"></div>
+    
+    <!-- Include Projects -->
+    <div data-include="sections/projects.html"></div>
+    
+    <!-- Include Contact -->
+    <div data-include="sections/contact.html"></div>
+    
+    <!-- Include Footer -->
+    <div data-include="sections/footer.html"></div>
 
-            </div>
-        </nav>
-    </header>
-    <section id="personal-info">
-
-    </section>
-    <section id="about"></section>
-    <section id="experience"></section>
-    <section id="project-showcase"></section>
-    <section id="project-showcase"></section>
-    <footer></footer>
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
 </body>
 </html>

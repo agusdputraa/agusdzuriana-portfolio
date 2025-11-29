@@ -1,0 +1,115 @@
+<!-- Projects Section -->
+<section id="projects" class="py-16 md:py-20 bg-[#111827]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-4 fade-in">Projects</h2>
+        <p class="text-center text-sm md:text-base max-w-2xl mx-auto mb-8 md:mb-10 text-gray-300 fade-in" data-delay="100">
+            A showcase of my recent work and personal projects.
+        </p>
+
+        <!-- Filter Tabs -->
+        <div class="flex justify-center gap-2 md:gap-4 mb-8 md:mb-12 fade-in" data-delay="150">
+            <button onclick="filterProjects('all')" class="project-tab active px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-medium transition" data-filter="all">
+                All
+            </button>
+            <button onclick="filterProjects('frontend')" class="project-tab px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-medium transition" data-filter="frontend">
+                Front-End
+            </button>
+            <button onclick="filterProjects('database')" class="project-tab px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-medium transition" data-filter="database">
+                Database
+            </button>
+        </div>
+
+        <!-- Project Grid - Snap scroll on mobile -->
+        <div id="projects-grid" class="project-carousel flex gap-4 md:gap-6 overflow-x-auto scroll-container pb-2 snap-x snap-mandatory sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:overflow-visible sm:snap-none">
+            <!-- Project Card 1 - Personal Portfolio (Frontend) -->
+            <div class="project-card border border-white/20 rounded-2xl overflow-hidden group hover:border-white/40 transition w-[calc(100vw-2rem)] flex-shrink-0 snap-center sm:w-auto sm:flex-shrink sm:snap-align-none scale-in" data-delay="200" data-category="frontend">
+                <div class="aspect-[21/9] sm:aspect-video bg-gray-800 overflow-hidden">
+                    <img src="agus-portfolio.jpg" alt="Personal Portfolio" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-4 md:p-5">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-xs px-2 py-1 border border-white/20 rounded flex items-center gap-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-3 h-3" alt="HTML"> HTML
+                        </span>
+                        <span class="text-xs px-2 py-1 border border-white/20 rounded flex items-center gap-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="w-3 h-3" alt="Tailwind"> Tailwind
+                        </span>
+                        <span class="text-xs px-2 py-1 border border-white/20 rounded flex items-center gap-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-3 h-3" alt="JavaScript"> JavaScript
+                        </span>
+                    </div>
+                    <h3 class="font-bold text-sm md:text-base mb-2">Personal Portfolio Website</h3>
+                    <p class="text-xs md:text-sm mb-4 text-gray-400">A personal portfolio website showcasing my skills and projects with modern design.</p>
+                    <a href="https://github.com/agusdputraa/agusdzuriana-portfolio" target="_blank" class="text-xs md:text-sm font-medium hover:text-cyan-400 transition inline-flex items-center gap-1">
+                        View on GitHub <i data-feather="github" class="w-3 h-3"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 - Ace of English (Frontend) -->
+            <div class="project-card border border-white/20 rounded-2xl overflow-hidden group hover:border-white/40 transition w-[calc(100vw-2rem)] flex-shrink-0 snap-center sm:w-auto sm:flex-shrink sm:snap-align-none scale-in" data-delay="300" data-category="frontend">
+                <div class="aspect-[21/9] sm:aspect-video bg-gray-800 overflow-hidden">
+                    <img src="ace-of-english.jpg" alt="Ace of English Website" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-4 md:p-5">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-xs px-2 py-1 border border-white/20 rounded flex items-center gap-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-3 h-3" alt="HTML"> HTML
+                        </span>
+                        <span class="text-xs px-2 py-1 border border-white/20 rounded flex items-center gap-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="w-3 h-3" alt="Tailwind"> Tailwind
+                        </span>
+                        <span class="text-xs px-2 py-1 border border-white/20 rounded flex items-center gap-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-3 h-3" alt="JavaScript"> JavaScript
+                        </span>
+                    </div>
+                    <h3 class="font-bold text-sm md:text-base mb-2">Ace of English Course Website</h3>
+                    <p class="text-xs md:text-sm mb-4 text-gray-400">An English course website with interactive learning features and modern UI.</p>
+                    <a href="https://github.com/agusdputraa/ace-of-english" target="_blank" class="text-xs md:text-sm font-medium hover:text-cyan-400 transition inline-flex items-center gap-1">
+                        View on GitHub <i data-feather="github" class="w-3 h-3"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 - De-Streaming Database -->
+            <div class="project-card border border-white/20 rounded-2xl overflow-hidden group hover:border-white/40 transition w-[calc(100vw-2rem)] flex-shrink-0 snap-center sm:w-auto sm:flex-shrink sm:snap-align-none scale-in" data-delay="400" data-category="database">
+                <div class="aspect-[21/9] sm:aspect-video bg-gray-800 overflow-hidden">
+                    <img src="distreaming-database.jpg" alt="DiStreaming Database" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-4 md:p-5">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <span class="text-xs px-2 py-1 border border-white/20 rounded flex items-center gap-1">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-3 h-3" alt="MySQL"> MySQL
+                        </span>
+                    </div>
+                    <h3 class="font-bold text-sm md:text-base mb-2">DiStreaming Database</h3>
+                    <p class="text-xs md:text-sm mb-4 text-gray-400">A streaming platform database design with 6 relational tables for content management.</p>
+                    <a href="https://github.com/agusdputraa/distreaming-database" target="_blank" class="text-xs md:text-sm font-medium hover:text-cyan-400 transition inline-flex items-center gap-1">
+                        View on GitHub <i data-feather="github" class="w-3 h-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .project-tab {
+            background: transparent;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.7);
+        }
+        .project-tab:hover {
+            border-color: rgba(255,255,255,0.4);
+            color: white;
+        }
+        .project-tab.active {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            border-color: transparent;
+            color: white;
+        }
+        .project-card.hidden {
+            display: none !important;
+        }
+    </style>
+
+</section>
